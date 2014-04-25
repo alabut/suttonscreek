@@ -279,11 +279,39 @@ img {
 
 
 .service-grid .col-md-4 {
-  background: #222 url(../images/home-banner.jpg);
+  background-color: #111;
   background-size: cover;
   display: table;
   height: 315px;
   text-align: center;
+}
+
+.service * {
+  background-size: cover;
+}
+
+.service-1 {
+  background-image: url(../images/service-1.png);
+}
+
+.service-2 {
+  background-image: url(../images/service-2.png);
+}
+
+.service-3 {
+  background-image: url(../images/service-3.png);
+}
+
+.service-4 {
+  background-image: url(../images/service-4.png);
+}
+
+.service-5 {
+  background-image: url(../images/service-5.png);
+}
+
+.service-6 {
+  background-image: url(../images/service-6.png);
 }
 
 .service-grid h3,
