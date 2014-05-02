@@ -21,7 +21,7 @@ a.outline {
   display: inline-block;
   font-weight: 300;
   letter-spacing: 2px;
-  padding: 15px;
+  padding: 15px 25px;
   text-transform: uppercase;
 }
 
@@ -63,8 +63,8 @@ a.primary-color h2 {
 a.primary-color h3 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
-  font-weight: 300;
-  margin-top: 5px;
+  font-weight: 100;
+  margin-top: 10px;
   text-transform: initial;
 }
 
@@ -121,7 +121,27 @@ img {
 }
 
 .navbar-inverse .navbar-brand img {
-  width: 24px;
+  width: 40px;
+}
+
+.navbar-inverse .navbar-brand img.logo-mobile {
+  width: 34px;
+}
+
+.navbar-inverse .navbar-brand img.logo-2x {
+  display: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+
+  .navbar-inverse .navbar-brand img.logo-1x {
+    display: none;
+  }
+
+  .navbar-inverse .navbar-brand img.logo-2x {
+    display: inline-block;
+  }
+  
 }
 
 
@@ -143,8 +163,8 @@ img {
   background-size: cover;
   color: #fff;
   display: table;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
+  height: 105%; /* For at least Firefox */
+  min-height: 105%;
   width: 100%;
 }
 
@@ -263,6 +283,7 @@ img {
 .text-section h3,
 .clients-list h3,
 .location-map h3 {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 300;
   margin: 20px 0 40px;
@@ -271,7 +292,9 @@ img {
 .text-section p,
 .clients-list p,
 .location-map p {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 20px;
+  font-weight: 300;
 }
 
 
@@ -400,11 +423,6 @@ img {
 
 @media (min-width: 992px) {
   
-  .container,
-  .cover-container {
-    width: 750px;
-  }
-  
 }
 
 @media (min-width: 768px) {
@@ -414,9 +432,9 @@ img {
     background: transparent;
   }
   
-  .cover-container {
-    width: 100%;
-    }
+  .navbar-nav>li>a {
+    padding-top: 25px;
+  }
 
   .banner-wrapper h2 {
     font-size: 64px;
@@ -429,6 +447,14 @@ img {
 
   .form-inline .form-control {
     max-width: 130px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+  .navbar-inverse .navbar-brand {
+    padding: 8px 15px 0;
   }
   
 }
