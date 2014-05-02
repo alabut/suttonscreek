@@ -31,7 +31,21 @@ a.outline:hover {
   text-decoration: none;
 }
 
+a.outline-white {
+  border-color: #fff;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 150px;
+}
+
+a.outline-white:hover {
+  background: #fff;
+  color: #222;
+}
+
 a.primary-color,
+button.primary-color,
 .btn-warning {
   background: #DA4F0E;
   border-color: #DA4F0E;
@@ -39,31 +53,37 @@ a.primary-color,
 }
 
 a.primary-color:hover,
+button.primary-color:hover,
 .btn-warning:hover {
   background: transparent;
   border-color: #DA4F0E;
   color: #DA4F0E;
 }
 
-a.primary-color:hover * {
+a.primary-color:hover *,
+button.primary-color:hover * {
   color: #DA4F0E;
 }
 
 a.primary-color h2,
-a.primary-color h3 {
+a.primary-color h3,
+button.primary-color h2,
+button.primary-color h3 {
   font-size: 18px;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-a.primary-color h2 {
+a.primary-color h2,
+button.primary-color h2 {
 }
 
-a.primary-color h3 {
+a.primary-color h3,
+button.primary-color h3 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 10px;
   text-transform: initial;
 }
@@ -99,6 +119,10 @@ img {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
   background-color: transparent;
   border-bottom: 1px solid #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-header {
@@ -144,6 +168,49 @@ img {
   
 }
 
+
+
+
+
+
+
+
+
+/* CONTACT MODAL */
+
+.modal-header,
+.modal-footer {
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom-color: #ddd;
+}
+
+.modal-footer {
+  border-top-color: #ddd;
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.modal-body {
+  padding-bottom: 10px;
+}
+
+.modal-body p {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.modal-content {
+  background: #eee;
+}
 
 
 
@@ -347,7 +414,9 @@ img {
 
 .service-grid h3 {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 120%;
 }
 
 .service-grid a {
@@ -358,7 +427,7 @@ img {
 
 .services-footer {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 
 
@@ -418,6 +487,72 @@ img {
 .footer .contact p {
   margin-bottom: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+/* SERVICES */
+
+.banner-minimal {
+  height: 80px;
+  min-height: 80px;
+}
+
+.image-slide {
+  background-color: #222;
+  background-size: cover;
+  color: #fff;
+}
+
+.sidebar h5,
+.sidebar p {
+  line-height: 140%;
+  margin: 20px 0 0;
+}
+
+.sidebar p {
+  font-size: 14px;
+}
+
+p.byline {
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+  padding: 0;
+}
+
+.service-slide-1 {
+  background-image: url(../images/service-1.png);
+}
+
+.service-slide-2 {
+  background-image: url(../images/service-2.png);
+}
+
+.service-slide-3 {
+  background-image: url(../images/service-3.png);
+}
+
+.service-slide-4 {
+  background-image: url(../images/service-4.png);
+}
+
+.service-slide-5 {
+  background-image: url(../images/service-5.png);
+}
+
+.service-slide-6 {
+  background-image: url(../images/service-6.png);
+}
+
+
+
+
 
 
 
