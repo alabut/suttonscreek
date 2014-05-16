@@ -332,6 +332,7 @@ img {
 
 .light-gray {
   background: #eee;
+  border-top: 1px solid #ddd;
 }
 
 .clients-list,
@@ -367,12 +368,12 @@ img {
 
 
 
-
 .service-grid .col-md-4 {
   background-color: #111;
   background-size: cover;
   display: table;
   height: 315px;
+  padding: 0;
   text-align: center;
 }
 
@@ -432,15 +433,16 @@ img {
 
 
 
-
-.call-to-action {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .call-to-action {
   border-bottom: 5px solid #008C8A;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
+}
+
+.call-to-action.map-overlay {
+  margin-top: -50px;
+  padding-top: 0;
 }
 
 .footer {
@@ -586,6 +588,10 @@ p.byline {
 
 @media (min-width: 992px) {
   
+  .call-to-action.map-overlay {
+    margin-top: -150px;
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -610,6 +616,14 @@ p.byline {
 
   .form-inline .form-control {
     max-width: 130px;
+  }
+  
+  .call-to-action.map-overlay {
+    margin-top: -100px;
+  }
+
+  .service-grid {
+    margin: 0 -18px;
   }
   
 }
