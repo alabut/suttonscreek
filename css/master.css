@@ -116,7 +116,9 @@ img {
   margin-bottom: -65px;
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
   background-color: transparent;
   border-bottom: 1px solid #fff;
   margin-left: 15px;
@@ -126,11 +128,13 @@ img {
 }
 
 .navbar-header {
-  background: rgba(0,0,0,0.8);
+  background: #222;
 }
 
 .navbar-inverse .navbar-collapse {
-  background: #111;
+  background: #222;
+  border-top: none;
+  box-shadow: none;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -504,8 +508,9 @@ img {
 /* SERVICES */
 
 .banner-minimal {
-  height: 80px;
-  min-height: 80px;
+  background: transparent;
+  height: 50px;
+  min-height: 50px;
 }
 
 .image-slide {
@@ -670,6 +675,13 @@ p.byline {
     padding-top: 25px;
   }
 
+
+  .banner-minimal {
+    background: #222 url(../images/home-banner.jpg);
+    height: 80px;
+    min-height: 80px;
+  }
+
   .banner-wrapper h2 {
     font-size: 64px;
     letter-spacing: 0;
@@ -697,6 +709,13 @@ p.byline {
   
   .navbar-inverse .navbar-brand {
     padding: 8px 15px 0;
+  }
+  
+  .navbar-inverse .navbar-nav>.active>a,
+  .navbar-inverse .navbar-nav>.active>a:hover,
+  .navbar-inverse .navbar-nav>.active>a:focus {
+    border: none;
+    font-weight: 900;
   }
   
 }
