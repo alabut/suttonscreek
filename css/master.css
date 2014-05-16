@@ -331,8 +331,8 @@ img {
 }
 
 .light-gray {
-  background: #eee;
-  border-top: 1px solid #ddd;
+  background: #F7F7F7;
+  border-top: 1px solid #eee;
 }
 
 .clients-list,
@@ -568,7 +568,7 @@ p.byline {
 }
 
 .blog-layout .subheader h3 {
-  border-bottom: 3px solid #eee;
+  /*border-bottom: 3px solid #eee;*/
   line-height: 140%;
   margin-bottom: 0;
   margin-top: 0;
@@ -609,6 +609,12 @@ p.byline {
   font-size: 12px;
   line-height: 100%;
   padding: 10px;
+}
+
+.blog-layout .sidebar {
+  background: #F7F7F7;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .blog-layout .sidebar .byline {
