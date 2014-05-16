@@ -21,7 +21,7 @@
 
   </head>
 
-  <body>
+  <body class="blog-layout">
 
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -99,7 +99,7 @@
             <li>
               <a href="team.html">TEAM</a>
             </li>
-            <li>
+            <li class="active">
               <a href="blog.html">BLOG</a>
             </li>
             <li>
@@ -116,86 +116,75 @@
     
     
     
-    <div class="banner-wrapper banner-cover">
+    <div class="banner-wrapper banner-cover banner-minimal">
       <div class="banner-wrapper-inner">
-        <div class="cover-container">
-          <h2>WE ARE SUTTONS CREEK</h2>
-          <h3>A product development consulting&nbsp;company</h3>
-          <p>
-            <a href="#content-anchor" class="outline">LEARN MORE</a>
-            <a class="outline fill" data-toggle="modal" data-target="#myModal" href="#">CONTACT</a>
-          </p>
-          
-          <a href="#content-anchor" class="scroll-indicator">
-            <img src="images/icon-chevron-down.png">
-          </a>
-        </div> <!-- /cover-container -->
-      </div> <!-- /banner-wrapper-inner -->
-    </div><!-- /banner-wrapper banner-cover -->
+      </div>
+    </div><!-- /banner -->
     
     
     
     
     
     <div id="content-anchor" class="content">
-      <div class="container text-section">
-          <h2>Solving the problem of&nbsp;complexity.</h2>
-          <h3>Biomedical product development is nothing if not&nbsp;complex. </h3>
-          <p>
-            Requirements Creation. Risk Management. Regulatory Submissions.<br/>
-            Managing these varying and often competing tasks is often the difference between success and&nbsp;failure.
-          </p>
-          <p>
-            Other consulting companies may deliver results on a particular project.<br/>
-            We strive to do more: to create elegant solutions that simplify and <strong>strengthen your entire development&nbsp;process.</strong>
-          </p>
-      </div>
-      <div class="container-fluid">
-        <div class="row service-grid">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-1">
-            <a href="#"><h3>MEDICAL DEVICE PRODUCT&nbsp;DEVELOPMENT </h3></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-2">
-            <a href="#"><h3>COMBINATION PRODUCT DEVELOPMENT </h3></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-3">
-            <a href="#"><h3>REGULATORY SUBMISSIONS &amp;&nbsp;REMEDIATION</h3></a>
-          </div>
-        </div>
-        <div class="row service-grid">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-4">
-            <a href="#"><h3>BUSINESS &amp; MARKETING PLANNING</h3></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-5">
-            <a href="#"><h3>INTELLECTUAL PROPERTY ANALYSIS</h3></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-6">
-            <a href="#"><h3>TRAINING</h3></a>
-          </div>
-        </div>
-        <div class="row services-footer">
-          <div class="col-md-12">
-            <a href="services.html" class="outline">FULL LIST OF SERVICES</a>
-          </div>
-        </div>
-        <div class="row light-gray clients-list">
-          <div class="col-md-12">
-            <h2>We have a wide range of experience</h2>
-            <p>From garage startups to Fortune 200 biotech companies</p>
-            <p>
-              <img src="images/client-logos.png">
-            </p>
-          </div>
-        </div>
-        <div class="row location-map">
-          <div class="col-md-12">
-            <h2>We have experience all over the map</h2>
-            <img src="images/map.png">
-          </div>
-        </div>
-      </div> <!-- /container-fluid -->
-    </div><!-- /content -->
-    <div class="map-overlay call-to-action">
+      
+      
+      
+      <div class="blog-content">
+        <div class="container text-section">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 blog-article main-col">
+              
+              <div class="blog-post">
+                <h2>Building A Medical Device Organization, Part 3: Documents And Engineering Data </h2>
+                <p class="byline">April 8, 2014</p>
+                <h3>The team at SCI has been embedded with pharmaceutical companies over the past year, helping them build medical device teams, processes, and designs as they bring drug delivery technology development in-house. In the blog over the next couple of months, we'll share some of the lessons we've learned concerning the unique challenge of building a medical device organization within a pharmaceutical company. </h3>
+                <p>When looking at the deliverables involved in building a medical device, often times the key deliverable expected of the engineering team is simply the product. Marketing is expected to generate materials, Regulatory does the submission, and Engineering builds the product (or at the very least the product design, ready for manufacturing).</p>
+
+                <p>But this view is overly simplistic and ignores a key deliverable that is as important as the physical product itself: <strong>the product's documentation.</strong></p>
+                <p>Not only does poor documentation make it difficult at submission time for you to effectively communicate your design history to regulatory agencies, but it also contributes to inefficiency and waste during the engineering process itself: new team members have difficulty figuring out the product, different engineering functions may inadvertently write specs that contradict each other, communication in general about the product becomes more difficult.</p>
+                <p>Each company needs to answer the following questions in order to have solid product documentation (preferably as early in the development process as possible):</p>
+                <ul>
+                  <li>Who is responsible for each document (there should be one person)?</li>
+                  <li>Who is responsible for approving each document?</li>
+                  <li>How are we going to break down engineering data across documents?</li>
+                  <li>What is our change control process? Who needs to be part of it? More crucially, who does not?</li>
+                  <li>How and when do documents get baselined?</li>
+                  <li>How are documents organized relative to one another?</li>
+                </ul>
+                <p>This latter is especially important, as a document hierarchy is often overlooked and both absolutely necessary. It prevents duplication of information across documents and allows for all stakeholders to easily find out where they need to go in order to find an answer to any particular question. What do we mean by a document hierarchy? Well, something like this:</p>
+                <p><img src="http://suttonscreek.com/images/sample-hierarchy.jpg" class="img-responsive"></p>
+                <p>In this (highly simplified) example, information on the voice of the customer is found at the marketing requirement level, high-level product requirements are found at the product requirement level and detailed information about the design of the product is found at the product spec level. In addition, the documents are broken by system and component. For instance, if the product is a combination device, all aspects of the device that pertain to use with the drug product would be found at the "system" level, whereas aspects of the device that do not would be found at the "component" level. This hierarchy, if created early in the development cycle, would allow for re-use of the component level documentation if the device was to be used with additional drug products.</p> 
+                <p>One tool that we've found to be very helpful in alleviating many of the challenges described in this post is the use of a requirements management system, like IBM's DOORS, as it allows an organization to disperse with fixed documents altogether for many use cases. We'll write more about DOORS in a later post.</p>
+                
+              </div> <!-- /blog-post -->
+              
+              
+              
+              
+              
+              
+
+              <p><a href="#" class="outline">VIEW ALL ARTICLES</a></p>
+            </div> <!-- /col  -->
+          </div> <!-- /row  -->
+        </div> <!-- /container  -->
+      </div> <!-- /image-slide  -->
+      
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <div class="light-gray call-to-action">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
