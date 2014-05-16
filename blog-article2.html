@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Suttons Creek - a product development consultancy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body class="blog-layout">
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">How can we help you?</h4>
+            </div>
+            <div class="modal-body">
+              <p>Tell us a bit about your project and we'll get back to you within 1-2 business days.</p>
+              <form role="form">
+                <div class="form-group">
+                  <label for="nameInput" class="sr-only">Name</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="emailInput" class="sr-only">Email</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="companyInput" class="sr-only">Company</label>
+                  <input type="text" class="form-control" id="companyInput" placeholder="Company">
+                </div>
+                <div class="form-group">
+                  <label for="message" class="sr-only">Message</label>
+                  <textarea id="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="budget" class="sr-only">Budget</label>
+                  <select class="form-control" id="budget">
+                    <option>Budget</option>
+                    <option>0 - $50,000</option>
+                    <option>$50,000 - $200,000</option>
+                    <option>$200,00+</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Sign Up For Our Newsletter
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-lg outline primary-color">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <header class="navbar navbar-inverse navbar-static-top" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo.png" class="hidden-xs logo-1x">
+            <img src="images/logo-mobile.png" class="visible-xs logo-mobile">
+            <img src="images/logo-2x.png" class="hidden-xs logo-2x">
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="approach.html">APPROACH</a>
+            </li>
+            <li>
+              <a href="services.html">SERVICES</a>
+            </li>
+            <li>
+              <a href="team.html">TEAM</a>
+            </li>
+            <li class="active">
+              <a href="blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://blog.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Blog']);">CLIENT LOGIN</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    
+    
+    
+    <div class="banner-wrapper banner-cover banner-minimal">
+      <div class="banner-wrapper-inner">
+      </div>
+    </div><!-- /banner -->
+    
+    
+    
+    
+    
+    <div id="content-anchor" class="content">
+      
+      
+      
+      <div class="blog-content">
+        <div class="container text-section">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 blog-article main-col">
+              
+              <div class="blog-post">
+                <h2>Building A Medical Device Organization, Part 3: Documents And Engineering Data </h2>
+                <p class="byline">April 8, 2014</p>
+                <h3>The team at SCI has been embedded with pharmaceutical companies over the past year, helping them build medical device teams, processes, and designs as they bring drug delivery technology development in-house. In the blog over the next couple of months, we'll share some of the lessons we've learned concerning the unique challenge of building a medical device organization within a pharmaceutical company. </h3>
+                <p>When looking at the deliverables involved in building a medical device, often times the key deliverable expected of the engineering team is simply the product. Marketing is expected to generate materials, Regulatory does the submission, and Engineering builds the product (or at the very least the product design, ready for manufacturing).</p>
+
+                <p>But this view is overly simplistic and ignores a key deliverable that is as important as the physical product itself: <strong>the product's documentation.</strong></p>
+                <p>Not only does poor documentation make it difficult at submission time for you to effectively communicate your design history to regulatory agencies, but it also contributes to inefficiency and waste during the engineering process itself: new team members have difficulty figuring out the product, different engineering functions may inadvertently write specs that contradict each other, communication in general about the product becomes more difficult.</p>
+                <p>Each company needs to answer the following questions in order to have solid product documentation (preferably as early in the development process as possible):</p>
+                <ul>
+                  <li>Who is responsible for each document (there should be one person)?</li>
+                  <li>Who is responsible for approving each document?</li>
+                  <li>How are we going to break down engineering data across documents?</li>
+                  <li>What is our change control process? Who needs to be part of it? More crucially, who does not?</li>
+                  <li>How and when do documents get baselined?</li>
+                  <li>How are documents organized relative to one another?</li>
+                </ul>
+                <p>This latter is especially important, as a document hierarchy is often overlooked and both absolutely necessary. It prevents duplication of information across documents and allows for all stakeholders to easily find out where they need to go in order to find an answer to any particular question. What do we mean by a document hierarchy? Well, something like this:</p>
+                <p><img src="http://suttonscreek.com/images/sample-hierarchy.jpg" class="img-responsive"></p>
+                <p>In this (highly simplified) example, information on the voice of the customer is found at the marketing requirement level, high-level product requirements are found at the product requirement level and detailed information about the design of the product is found at the product spec level. In addition, the documents are broken by system and component. For instance, if the product is a combination device, all aspects of the device that pertain to use with the drug product would be found at the "system" level, whereas aspects of the device that do not would be found at the "component" level. This hierarchy, if created early in the development cycle, would allow for re-use of the component level documentation if the device was to be used with additional drug products.</p> 
+                <p>One tool that we've found to be very helpful in alleviating many of the challenges described in this post is the use of a requirements management system, like IBM's DOORS, as it allows an organization to disperse with fixed documents altogether for many use cases. We'll write more about DOORS in a later post.</p>
+                
+              </div> <!-- /blog-post -->
+              
+              
+              
+              
+              
+              
+
+              <p><a href="#" class="outline">VIEW ALL ARTICLES</a></p>
+            </div> <!-- /col  -->
+          </div> <!-- /row  -->
+        </div> <!-- /container  -->
+      </div> <!-- /image-slide  -->
+      
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <div class="light-gray call-to-action">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <a data-toggle="modal" data-target="#myModal" href="#" class="outline primary-color">
+              <h2>WANT US TO WORK FOR&nbsp;YOU?</h2>
+              <h3>Click here to hire us</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 blog">
+            <h2>From The Blog</h2>
+            <h3><a href="#">Building a medical device organization, part 3: documents and engineering data </a></h3>
+            <p>April 8th, 2014</p>
+            <h3><a href="#">Building a medical device organization, part 2: sourcing and vendors </a></h3>
+            <p>March 12th, 2014</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 newsletter">
+            <h2>Stay Up To Date</h2>
+            <h3>Sign up for our occasional newsletter</h3>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-default btn-warning">Sign Up</button>
+            </form>
+            <p>&copy; 2014 Suttons Creek. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 contact">
+            <h2>Contact Us</h2>
+            <p>840 Harrison St. 2nd Fl. 94107</p>
+            <p>877-611-4SCI (4724)</p>
+            <p><a href="maito:info@suttonscreek.com">info@suttonscreek.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /footer -->
+
+    
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
