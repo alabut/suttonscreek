@@ -112,6 +112,7 @@ img {
 
 .navbar {
   background-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#00000000'); /* IE */
   border-bottom: none;
   margin-bottom: -65px;
 }
